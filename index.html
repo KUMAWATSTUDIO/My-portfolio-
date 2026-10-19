@@ -3,32 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhanu Kumawat</title>
+    <title>Bhanu Kumawat | Creative Video Editor</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>BHANU KUMAWAT</h1>
-        <nav>
+
+    <header class="navbar">
+        <div class="logo">BHANU KUMAWAT</div>
+        <nav class="nav-links">
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="mailto:bhanu@example.com">Contact</a>
+            <a href="#projects">Work</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </header>
 
     <main>
-        <section id="about">
-            <p class="description">मैं एक वीडियो एडिटर हूँ और मुझे क्रिएटिव वीडियो बनाना पसंद है।</p>
-            <button>Hire Me</button>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <span class="subtitle">Video Editor & Storyteller</span>
+                <h1>Crafting Visuals That Speak.</h1>
+                <p class="description">Transforming raw footage into compelling cinematic experiences.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn-primary">View Work</a>
+                    <a href="#contact" class="btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-background"></div>
         </section>
 
-        <section id="projects">
-            <h2>मेरे प्रोजेक्ट्स</h2>
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h2>Behind the Cut</h2>
+                <p>Hello! I'm Bhanu Kumawat. I specialize in dynamic editing, color grading, and visual storytelling that grabs attention and holds it.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-overlay">
+                        <h3>Project One</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-overlay">
+                        <h3>Project Two</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-overlay">
+                        <h3>Project Three</h3>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Bhanu Kumawat</p>
+    <footer id="contact" class="footer-section">
+        <h2>Let's Create Together</h2>
+        <p>Ready to bring your vision to life? Get in touch.</p>
+        <a href="mailto:bhanu@example.com" class="email-link">bhanu@example.com</a>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bhanu Kumawat. All rights reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>
