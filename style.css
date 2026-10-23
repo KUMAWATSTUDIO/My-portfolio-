@@ -1,10 +1,6 @@
 /* ==========================================================================
    KUMAWAT STUDIO – style.css
    Premium cinematic portfolio | Black + Charcoal + Gold
-   Sections:
-   01 Variables   02 Reset/Base   03 Layout   04 Buttons   05 Header/Nav
-   06 Hero        07 Sections     08 About    09 Services  10 Portfolio
-   11 Contact     12 Footer       13 Animations   14 Responsive   15 Reduced motion
    ========================================================================== */
 
 /* ---------- 01. VARIABLES ---------- */
@@ -21,7 +17,6 @@
   --muted: #b9b5ab;
   --line: rgba(212, 175, 55, 0.22);
   --line-soft: rgba(255, 255, 255, 0.08);
-  --error: #ff8a80;
 
   --font-display: "Cormorant Garamond", "Noto Serif Devanagari", Georgia, "Times New Roman", serif;
   --font-body: "Poppins", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -46,6 +41,7 @@ html {
   scroll-padding-top: calc(var(--header-h) + 12px);
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -98,12 +94,9 @@ a {
   text-decoration: none;
 }
 
-button, input, textarea {
+button {
   font: inherit;
   color: inherit;
-}
-
-button {
   cursor: pointer;
 }
 
@@ -116,7 +109,6 @@ button {
   color: var(--black);
 }
 
-/* Keyboard focus */
 :focus {
   outline: none;
 }
@@ -127,7 +119,6 @@ button {
   border-radius: 6px;
 }
 
-/* Skip link */
 .skip-link {
   position: fixed;
   top: -60px;
@@ -156,6 +147,7 @@ button {
 .section {
   position: relative;
   padding-block: 80px;
+  overflow: hidden;
 }
 
 .section-head {
@@ -310,7 +302,6 @@ html[lang="hi"] .eyebrow {
   color: var(--gold);
 }
 
-/* Hamburger */
 .nav-toggle,
 .menu-toggle {
   position: relative;
@@ -360,7 +351,6 @@ html[lang="hi"] .eyebrow {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Mobile menu panel (default) */
 .nav-menu {
   position: fixed;
   top: var(--header-h);
@@ -407,7 +397,6 @@ html[lang="hi"] .eyebrow {
   padding-left: 10px;
 }
 
-/* Language toggle */
 .lang-switch,
 .language-toggle {
   display: inline-flex;
@@ -450,8 +439,7 @@ html[lang="hi"] .eyebrow {
   min-height: 100svh;
   padding: calc(var(--header-h) + 40px) 0 90px;
   overflow: hidden;
-  background:
-    radial-gradient(ellipse at 50% 0%, #1b1b1b 0%, var(--black) 70%);
+  background: radial-gradient(ellipse at 50% 0%, #1b1b1b 0%, var(--black) 70%);
   isolation: isolate;
 }
 
@@ -488,7 +476,6 @@ html[lang="hi"] .eyebrow {
   animation: floatGlow 18s ease-in-out infinite reverse;
 }
 
-/* Subtle film-strip lines */
 .film-lines {
   position: absolute;
   inset: 0;
@@ -579,7 +566,7 @@ html[lang="hi"] .hero-title {
   animation: scrollDot 1.8s ease-in-out infinite;
 }
 
-/* ---------- 07. GENERIC SECTION BACKDROPS ---------- */
+/* ---------- 07. SECTION BACKDROPS ---------- */
 .about {
   background: linear-gradient(180deg, var(--black), var(--charcoal) 100%);
 }
@@ -600,7 +587,7 @@ html[lang="hi"] .hero-title {
 /* ---------- 08. ABOUT ---------- */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 40px;
   align-items: start;
 }
@@ -660,7 +647,7 @@ html[lang="hi"] .hero-title {
 
 .about-blocks {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
   margin-top: 28px;
 }
@@ -717,7 +704,7 @@ html[lang="hi"] .hero-title {
 .service-card {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
   padding: 28px 22px;
   background:
@@ -803,7 +790,7 @@ html[lang="hi"] .hero-title {
 /* ---------- 10. PORTFOLIO ---------- */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
 }
 
@@ -913,7 +900,6 @@ html[lang="hi"] .hero-title {
   letter-spacing: 0.03em;
 }
 
-/* Empty state */
 .empty-state,
 .portfolio-empty {
   position: relative;
@@ -988,107 +974,57 @@ html[lang="hi"] .hero-title {
   color: var(--muted);
 }
 
-/* ---------- 11. CONTACT ---------- */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 36px;
-  align-items: start;
+/* ---------- 11. CONTACT (ईमेल / फ़ोन / WhatsApp) ---------- */
+.contact-simple {
+  max-width: 720px;
+  text-align: center;
 }
 
-.contact-intro > p {
+.contact-simple .section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.contact-text {
   color: var(--muted);
 }
 
-.contact-form {
+.contact-cards {
   display: grid;
-  gap: 20px;
-  padding: 26px 20px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  margin: 32px 0 8px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 22px 18px;
   background: var(--charcoal-2);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
+  transition: transform 0.35s var(--ease), border-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
   box-shadow: var(--shadow);
 }
 
-.field,
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.contact-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
 }
 
-.field label,
-.form-group label {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--gold-light);
-}
-
-.field input,
-.field textarea,
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  min-height: 52px;
-  padding: 14px 16px;
-  font-size: 1rem; /* 16px avoids iOS zoom */
+.contact-value {
+  font-size: 1.05rem;
   color: var(--white);
-  background: var(--black);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 12px;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
-}
-
-.field textarea,
-.form-group textarea {
-  min-height: 140px;
-  resize: vertical;
-}
-
-.field input::placeholder,
-.field textarea::placeholder,
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: #7d7a72;
-}
-
-.field input:hover,
-.field textarea:hover,
-.form-group input:hover,
-.form-group textarea:hover {
-  border-color: rgba(212, 175, 55, 0.45);
-}
-
-.field input:focus,
-.field textarea:focus,
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.28);
-  background: #0b0b0b;
-}
-
-.contact-form .btn {
-  width: 100%;
-}
-
-.form-status {
-  min-height: 1.5em;
-  font-size: 0.92rem;
-  line-height: 1.5;
-}
-
-.form-status.error {
-  color: var(--error);
-}
-
-.form-status.info {
-  padding: 12px 14px;
-  color: var(--gold-light);
-  background: rgba(212, 175, 55, 0.08);
-  border: 1px solid var(--line);
-  border-radius: 10px;
+  overflow-wrap: anywhere;
 }
 
 /* ---------- 12. FOOTER ---------- */
@@ -1167,7 +1103,6 @@ html[lang="hi"] .hero-title {
   50% { box-shadow: 0 0 0 16px rgba(212, 175, 55, 0); }
 }
 
-/* Scroll reveal: content stays visible if JavaScript is unavailable */
 .js .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -1179,9 +1114,7 @@ html[lang="hi"] .hero-title {
   transform: translateY(0);
 }
 
-/* ---------- 14. RESPONSIVE (mobile-first, scaling up) ---------- */
-
-/* Small phones */
+/* ---------- 14. RESPONSIVE ---------- */
 @media (max-width: 359px) {
   .container {
     padding-inline: 14px;
@@ -1197,7 +1130,6 @@ html[lang="hi"] .hero-title {
   }
 }
 
-/* Large phones / small tablets */
 @media (min-width: 600px) {
   .container {
     padding-inline: 28px;
@@ -1220,27 +1152,26 @@ html[lang="hi"] .hero-title {
   }
 
   .about-blocks {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .service-card {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto minmax(0, 1fr);
     gap: 32px;
     padding: 40px 36px;
   }
 
-  .service-body .btn,
-  .contact-form .btn {
+  .service-body .btn {
     width: auto;
     min-width: 200px;
-  }
-
-  .contact-form {
-    padding: 34px 30px;
   }
 
   .footer-inner {
@@ -1250,7 +1181,6 @@ html[lang="hi"] .hero-title {
   }
 }
 
-/* Tablets landscape / small laptops: full horizontal navigation */
 @media (min-width: 900px) {
   :root {
     --header-h: 76px;
@@ -1320,7 +1250,7 @@ html[lang="hi"] .hero-title {
   }
 
   .about-grid {
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
     gap: 64px;
   }
 
@@ -1330,12 +1260,7 @@ html[lang="hi"] .hero-title {
   }
 
   .portfolio-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .contact-grid {
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 64px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .service-icon {
@@ -1344,7 +1269,6 @@ html[lang="hi"] .hero-title {
   }
 }
 
-/* Large desktops */
 @media (min-width: 1280px) {
   .container {
     max-width: 1240px;
@@ -1365,7 +1289,6 @@ html[lang="hi"] .hero-title {
   }
 }
 
-/* Short landscape phones */
 @media (max-height: 520px) and (orientation: landscape) {
   .hero {
     min-height: auto;
