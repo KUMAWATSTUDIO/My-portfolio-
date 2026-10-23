@@ -11,10 +11,8 @@
   <meta property="og:description" content="Every Frame. A Better Story. | हर वीडियो को दो एक नई पहचान।">
   <meta property="og:type" content="website">
 
-  <!-- Simple gold "K" favicon (no extra file needed) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23000'/%3E%3Ctext x='50' y='70' font-size='64' font-family='serif' font-weight='700' text-anchor='middle' fill='%23d4af37'%3EK%3C/text%3E%3C/svg%3E">
 
-  <!-- Free Google Fonts (optional; site still works with fallback fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -90,9 +88,8 @@
         <div class="about-visual" aria-hidden="true">
           <div class="frame">
             <!--
-              EDIT: To add your photo, replace the placeholder block below with:
+              EDIT: अपनी फोटो लगाने के लिए नीचे वाला frame-placeholder हटाकर यह लिखें:
               <img src="images/bhanu.jpg" alt="Bhanu Kumawat – Video Editor">
-              (upload the photo into an "images" folder in your repository)
             -->
             <div class="frame-placeholder">
               <span>BK</span>
@@ -110,7 +107,7 @@
              data-hi="मैं भानु कुमावत हूँ — वीडियोग्राफी और वीडियो एडिटिंग के क्षेत्र में काम करने वाला क्रिएटिव। KUMAWAT STUDIO मेरा ब्रांड है, जहाँ मेरी मुख्य सेवा वीडियो एडिटिंग है।"
              data-en="I am Bhanu Kumawat — a creative working in videography and video editing. KUMAWAT STUDIO is my brand, where my main service is video editing.">मैं भानु कुमावत हूँ — वीडियोग्राफी और वीडियो एडिटिंग के क्षेत्र में काम करने वाला क्रिएटिव। KUMAWAT STUDIO मेरा ब्रांड है, जहाँ मेरी मुख्य सेवा वीडियो एडिटिंग है।</p>
 
-          <!-- EDIT: Replace each placeholder text below with your own real information. -->
+          <!-- EDIT: नीचे के हर [bracket वाले] टेक्स्ट को अपनी असली जानकारी से बदलें। -->
           <div class="about-blocks">
             <article class="info-card">
               <h3 data-hi="मेरी बायोग्राफी" data-en="My Biography">मेरी बायोग्राफी</h3>
@@ -167,11 +164,10 @@
           <div class="service-body">
             <h3 data-hi="प्रोफेशनल वीडियो एडिटिंग" data-en="Professional Video Editing">प्रोफेशनल वीडियो एडिटिंग</h3>
 
-            <!-- EDIT: Change this description to match exactly what you offer. -->
             <p data-hi="आपकी रॉ फ़ुटेज को एक साफ़, प्रभावशाली और कहानी कहने वाले वीडियो में बदलना।"
                data-en="Turning your raw footage into a clean, engaging video that tells a story.">आपकी रॉ फ़ुटेज को एक साफ़, प्रभावशाली और कहानी कहने वाले वीडियो में बदलना।</p>
 
-            <!-- EDIT: Replace these placeholders with your real service details. -->
+            <!-- EDIT: अपनी असली सेवाओं के हिसाब से बदलें। -->
             <ul class="service-points">
               <li class="placeholder-text" data-hi="[सेवा बिंदु 1 — यहाँ संपादित करें]" data-en="[Service point 1 — edit here]">[सेवा बिंदु 1 — यहाँ संपादित करें]</li>
               <li class="placeholder-text" data-hi="[सेवा बिंदु 2 — यहाँ संपादित करें]" data-en="[Service point 2 — edit here]">[सेवा बिंदु 2 — यहाँ संपादित करें]</li>
@@ -195,15 +191,14 @@
         </header>
 
         <!--
-          HOW TO ADD A REAL PROJECT LATER:
-          1. Upload your thumbnail image into an "images" folder in your repository.
-          2. Copy the project card block below (the one inside the comment).
-          3. Paste it inside <div class="portfolio-grid" id="portfolioGrid"> ... </div>
-          4. Replace the title, description, image path and YouTube link.
-          5. Delete the empty-state block (<div class="empty-state" id="emptyState"> ... </div>)
-             or leave it - the page will hide it automatically when a project card exists.
+          असली प्रोजेक्ट जोड़ने का तरीका:
+          1. थंबनेल फोटो को repository के "images" फ़ोल्डर में अपलोड करें।
+          2. नीचे वाला कार्ड टेम्पलेट कॉपी करें (<!-- और --> हटाकर)।
+          3. उसे <div class="portfolio-grid" id="portfolioGrid"> के अंदर पेस्ट करें।
+          4. टाइटल, विवरण, फोटो का पाथ और YouTube लिंक बदलें।
+          5. कार्ड जुड़ते ही "जल्द आ रहा है" वाला बॉक्स अपने आप छिप जाएगा।
 
-          ------------- PROJECT CARD TEMPLATE -------------
+          ---------- PROJECT CARD TEMPLATE ----------
           <article class="project-card">
             <a class="project-thumb" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
                target="_blank" rel="noopener noreferrer" aria-label="Watch: Your Project Title">
@@ -217,11 +212,11 @@
                  target="_blank" rel="noopener noreferrer">Watch on YouTube &rarr;</a>
             </div>
           </article>
-          -------------------------------------------------
+          -------------------------------------------
         -->
 
         <div class="portfolio-grid" id="portfolioGrid">
-          <!-- Add real project cards here -->
+          <!-- यहाँ असली project cards जोड़ें -->
         </div>
 
         <div class="empty-state reveal" id="emptyState">
@@ -246,53 +241,31 @@
 
     <!-- ===================== 6. CONTACT ===================== -->
     <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-grid">
-        <div class="contact-intro reveal">
-          <p class="eyebrow" data-hi="संपर्क" data-en="Contact">संपर्क</p>
-          <h2 id="contact-title" class="section-title"
-              data-hi="आइए आपकी कहानी पर काम करें" data-en="Let's Work on Your Story">आइए आपकी कहानी पर काम करें</h2>
-          <p data-hi="अपने प्रोजेक्ट की जानकारी नीचे लिखें।"
-             data-en="Share a few details about your project below.">अपने प्रोजेक्ट की जानकारी नीचे लिखें।</p>
+      <div class="container contact-simple reveal">
+        <p class="eyebrow" data-hi="संपर्क" data-en="Contact">संपर्क</p>
+        <h2 id="contact-title" class="section-title"
+            data-hi="आइए आपकी कहानी पर काम करें" data-en="Let's Work on Your Story">आइए आपकी कहानी पर काम करें</h2>
+        <p class="contact-text"
+           data-hi="अपने प्रोजेक्ट के बारे में बात करने के लिए सीधे संपर्क करें।"
+           data-en="Get in touch directly to talk about your project.">अपने प्रोजेक्ट के बारे में बात करने के लिए सीधे संपर्क करें।</p>
 
-          <!--
-            WHATSAPP BUTTON (hidden until configured):
-            Open this file and find the line: const WHATSAPP_NUMBER = "";
-            Put your number with country code, digits only. Example: "919XXXXXXXXX"
-          -->
-          <a href="#" class="btn btn-whatsapp" id="whatsappBtn" target="_blank" rel="noopener noreferrer" hidden
-             data-hi="WhatsApp पर बात करें" data-en="Chat on WhatsApp">WhatsApp पर बात करें</a>
+        <div class="contact-cards">
+          <!-- EDIT: अपना असली ईमेल दोनों जगह डालें (href में और नीचे दिखने वाले टेक्स्ट में) -->
+          <a class="contact-card" href="mailto:YOUR_EMAIL@example.com">
+            <span class="contact-label" data-hi="ईमेल" data-en="Email">ईमेल</span>
+            <span class="contact-value">YOUR_EMAIL@example.com</span>
+          </a>
+
+          <!-- EDIT: अपना असली नंबर दोनों जगह डालें (href में बिना space, नीचे टेक्स्ट में चाहे जैसे) -->
+          <a class="contact-card" href="tel:+91XXXXXXXXXX">
+            <span class="contact-label" data-hi="फ़ोन" data-en="Phone">फ़ोन</span>
+            <span class="contact-value">+91 XXXXX XXXXX</span>
+          </a>
         </div>
 
-        <!--
-          NOTE: This form is NOT connected to any backend, so it does not send data anywhere.
-          To make it work later, you can connect a free form service (for example Formspree)
-          by adding its URL in the form's action attribute and removing the preventDefault
-          block in the script below.
-        -->
-        <form class="contact-form reveal" id="enquiryForm" novalidate>
-          <div class="field">
-            <label for="name" data-hi="आपका नाम" data-en="Your Name">आपका नाम</label>
-            <input type="text" id="name" name="name" autocomplete="name" required
-                   data-hi-placeholder="अपना नाम लिखें" data-en-placeholder="Enter your name" placeholder="अपना नाम लिखें">
-          </div>
-
-          <div class="field">
-            <label for="contactInfo" data-hi="ईमेल या फ़ोन" data-en="Email or Phone">ईमेल या फ़ोन</label>
-            <input type="text" id="contactInfo" name="contact" autocomplete="email" required
-                   data-hi-placeholder="ईमेल या फ़ोन नंबर" data-en-placeholder="Email address or phone number" placeholder="ईमेल या फ़ोन नंबर">
-          </div>
-
-          <div class="field">
-            <label for="details" data-hi="प्रोजेक्ट की जानकारी" data-en="Project Details">प्रोजेक्ट की जानकारी</label>
-            <textarea id="details" name="details" rows="5" required
-                      data-hi-placeholder="अपने प्रोजेक्ट के बारे में बताएँ" data-en-placeholder="Tell me about your project" placeholder="अपने प्रोजेक्ट के बारे में बताएँ"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-gold"
-                  data-hi="पूछताछ भेजें" data-en="Send Enquiry">पूछताछ भेजें</button>
-
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-        </form>
+        <!-- WhatsApp बटन: script में नंबर डालने तक छिपा रहता है -->
+        <a href="#" class="btn btn-whatsapp" id="whatsappBtn" target="_blank" rel="noopener noreferrer" hidden
+           data-hi="WhatsApp पर बात करें" data-en="Chat on WhatsApp">WhatsApp पर बात करें</a>
       </div>
     </section>
 
@@ -323,28 +296,17 @@
     (function () {
       'use strict';
 
-      /* ---------- SETTINGS (edit here) ---------- */
-      // WhatsApp number with country code, digits only. Example: "919XXXXXXXXX"
-      // Leave empty ("") to keep the WhatsApp button hidden.
+      /* ---------- SETTINGS (यहाँ बदलें) ---------- */
+      // WhatsApp नंबर country code के साथ, सिर्फ़ अंक। उदाहरण: "919XXXXXXXXX"
+      // खाली ("") छोड़ने पर WhatsApp बटन छिपा रहेगा।
       const WHATSAPP_NUMBER = "";
       const WHATSAPP_MESSAGE = "Hello KUMAWAT STUDIO, I would like to discuss a video editing project.";
 
-      /* ---------- Helpers ---------- */
       const root = document.documentElement;
       root.classList.add('js');
 
       /* ---------- Language switching ---------- */
       const langButtons = document.querySelectorAll('.lang-btn');
-      const statusMessages = {
-        hi: {
-          empty: 'कृपया सभी फ़ील्ड भरें।',
-          notConnected: 'यह फ़ॉर्म अभी किसी सेवा से जुड़ा नहीं है, इसलिए आपकी जानकारी कहीं भेजी नहीं गई है।'
-        },
-        en: {
-          empty: 'Please fill in all fields.',
-          notConnected: 'This form is not connected to a service yet, so your details have not been sent anywhere.'
-        }
-      };
       const menuLabels = {
         hi: { open: 'मेन्यू खोलें', close: 'मेन्यू बंद करें' },
         en: { open: 'Open menu', close: 'Close menu' }
@@ -358,10 +320,6 @@
           el.innerHTML = el.getAttribute('data-' + lang);
         });
 
-        document.querySelectorAll('[data-hi-placeholder]').forEach(function (el) {
-          el.setAttribute('placeholder', el.getAttribute('data-' + lang + '-placeholder'));
-        });
-
         langButtons.forEach(function (btn) {
           btn.setAttribute('aria-pressed', btn.getAttribute('data-lang') === lang ? 'true' : 'false');
         });
@@ -369,10 +327,6 @@
         const toggle = document.getElementById('navToggle');
         const isOpen = toggle.getAttribute('aria-expanded') === 'true';
         toggle.setAttribute('aria-label', isOpen ? menuLabels[lang].close : menuLabels[lang].open);
-
-        const status = document.getElementById('formStatus');
-        status.textContent = '';
-        status.className = 'form-status';
 
         try { localStorage.setItem('kumawat-lang', lang); } catch (e) { /* storage unavailable */ }
       }
@@ -450,27 +404,6 @@
         waBtn.href = 'https://wa.me/' + cleanNumber + '?text=' + encodeURIComponent(WHATSAPP_MESSAGE);
         waBtn.hidden = false;
       }
-
-      /* ---------- Enquiry form (no backend – honest message only) ---------- */
-      const form = document.getElementById('enquiryForm');
-      const formStatus = document.getElementById('formStatus');
-
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        const lang = root.getAttribute('lang') || 'hi';
-        const name = form.elements['name'].value.trim();
-        const contact = form.elements['contact'].value.trim();
-        const details = form.elements['details'].value.trim();
-
-        if (!name || !contact || !details) {
-          formStatus.textContent = statusMessages[lang].empty;
-          formStatus.className = 'form-status error';
-          return;
-        }
-
-        formStatus.textContent = statusMessages[lang].notConnected;
-        formStatus.className = 'form-status info';
-      });
 
       /* ---------- Footer year ---------- */
       const yearEl = document.getElementById('year');
