@@ -1,79 +1,481 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="hi" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhanu Kumawat | Creative Video Editor</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUMAWAT STUDIO | Bhanu Kumawat – Video Editing | वीडियो एडिटिंग</title>
+  <meta name="description" content="KUMAWAT STUDIO – Bhanu Kumawat द्वारा प्रोफेशनल वीडियो एडिटिंग। Creative video editing that transforms your footage into compelling visual stories.">
+  <meta name="theme-color" content="#000000">
+  <meta name="author" content="Bhanu Kumawat">
+  <meta property="og:title" content="KUMAWAT STUDIO – Video Editing">
+  <meta property="og:description" content="Every Frame. A Better Story. | हर वीडियो को दो एक नई पहचान।">
+  <meta property="og:type" content="website">
+
+  <!-- Simple gold "K" favicon (no extra file needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23000'/%3E%3Ctext x='50' y='70' font-size='64' font-family='serif' font-weight='700' text-anchor='middle' fill='%23d4af37'%3EK%3C/text%3E%3C/svg%3E">
+
+  <!-- Free Google Fonts (optional; site still works with fallback fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">BHANU KUMAWAT</div>
-        <nav class="nav-links">
-            <a href="#about">About</a>
-            <a href="#projects">Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a class="skip-link" href="#main"
+     data-hi="मुख्य सामग्री पर जाएँ" data-en="Skip to main content">मुख्य सामग्री पर जाएँ</a>
+
+  <!-- ===================== 1. NAVIGATION ===================== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="KUMAWAT STUDIO – Home">KUMAWAT <span>STUDIO</span></a>
+
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" data-hi="होम" data-en="Home">होम</a></li>
+          <li><a href="#about" data-hi="परिचय" data-en="About">परिचय</a></li>
+          <li><a href="#services" data-hi="सेवाएँ" data-en="Services">सेवाएँ</a></li>
+          <li><a href="#portfolio" data-hi="पोर्टफोलियो" data-en="Portfolio">पोर्टफोलियो</a></li>
+          <li><a href="#contact" data-hi="संपर्क" data-en="Contact">संपर्क</a></li>
+        </ul>
+
+        <div class="lang-switch" role="group" aria-label="Language / भाषा">
+          <button type="button" class="lang-btn" data-lang="hi" aria-pressed="true">हिन्दी</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <span class="subtitle">Video Editor & Storyteller</span>
-                <h1>Crafting Visuals That Speak.</h1>
-                <p class="description">Transforming raw footage into compelling cinematic experiences.</p>
-                <div class="cta-group">
-                    <a href="#projects" class="btn-primary">View Work</a>
-                    <a href="#contact" class="btn-secondary">Let's Talk</a>
-                </div>
-            </div>
-            <div class="hero-background"></div>
-        </section>
+  <main id="main">
 
-        <section id="about" class="about-section">
-            <div class="about-container">
-                <h2>Behind the Cut</h2>
-                <p>Hello! I'm Bhanu Kumawat. I specialize in dynamic editing, color grading, and visual storytelling that grabs attention and holds it.</p>
-            </div>
-        </section>
-
-        <section id="projects" class="projects-section">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-overlay">
-                        <h3>Project One</h3>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-overlay">
-                        <h3>Project Two</h3>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-overlay">
-                        <h3>Project Three</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contact" class="footer-section">
-        <h2>Let's Create Together</h2>
-        <p>Ready to bring your vision to life? Get in touch.</p>
-        <a href="mailto:bhanu@example.com" class="email-link">bhanu@example.com</a>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Bhanu Kumawat. All rights reserved.</p>
+    <!-- ===================== 2. HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="glow glow-1"></span>
+        <span class="glow glow-2"></span>
+        <span class="film-lines"></span>
+      </div>
+      <div class="container hero-inner">
+        <p class="eyebrow">KUMAWAT STUDIO</p>
+        <h1 id="hero-title" class="hero-title"
+            data-hi="हर वीडियो को दो एक नई पहचान।"
+            data-en="Every Frame. A Better Story.">हर वीडियो को दो एक नई पहचान।</h1>
+        <p class="hero-sub"
+           data-hi="क्रिएटिव वीडियो एडिटिंग जो आपकी कहानी को एक नई पहचान दे।"
+           data-en="Creative video editing that transforms your footage into compelling visual stories.">क्रिएटिव वीडियो एडिटिंग जो आपकी कहानी को एक नई पहचान दे।</p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-gold"
+             data-hi="मेरा काम देखें" data-en="View My Work">मेरा काम देखें</a>
+          <a href="#contact" class="btn btn-outline"
+             data-hi="Let's Work Together" data-en="Let's Work Together">Let's Work Together</a>
         </div>
-    </footer>
+        <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+          <span class="scroll-line"></span>
+        </a>
+      </div>
+    </section>
 
+    <!-- ===================== 3. ABOUT ===================== -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid reveal">
+        <div class="about-visual" aria-hidden="true">
+          <div class="frame">
+            <!--
+              EDIT: To add your photo, replace the placeholder block below with:
+              <img src="images/bhanu.jpg" alt="Bhanu Kumawat – Video Editor">
+              (upload the photo into an "images" folder in your repository)
+            -->
+            <div class="frame-placeholder">
+              <span>BK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow" data-hi="परिचय" data-en="About">परिचय</p>
+          <h2 id="about-title" class="section-title"
+              data-hi="भानु कुमावत &amp; KUMAWAT STUDIO"
+              data-en="Bhanu Kumawat &amp; KUMAWAT STUDIO">भानु कुमावत &amp; KUMAWAT STUDIO</h2>
+
+          <p class="lead"
+             data-hi="मैं भानु कुमावत हूँ — वीडियोग्राफी और वीडियो एडिटिंग के क्षेत्र में काम करने वाला क्रिएटिव। KUMAWAT STUDIO मेरा ब्रांड है, जहाँ मेरी मुख्य सेवा वीडियो एडिटिंग है।"
+             data-en="I am Bhanu Kumawat — a creative working in videography and video editing. KUMAWAT STUDIO is my brand, where my main service is video editing.">मैं भानु कुमावत हूँ — वीडियोग्राफी और वीडियो एडिटिंग के क्षेत्र में काम करने वाला क्रिएटिव। KUMAWAT STUDIO मेरा ब्रांड है, जहाँ मेरी मुख्य सेवा वीडियो एडिटिंग है।</p>
+
+          <!-- EDIT: Replace each placeholder text below with your own real information. -->
+          <div class="about-blocks">
+            <article class="info-card">
+              <h3 data-hi="मेरी बायोग्राफी" data-en="My Biography">मेरी बायोग्राफी</h3>
+              <p class="placeholder-text"
+                 data-hi="[यहाँ अपनी बायोग्राफी लिखें — आप कौन हैं, आपने वीडियो एडिटिंग क्यों चुनी, आपकी कहानी क्या है।]"
+                 data-en="[Write your biography here — who you are, why you chose video editing, what your story is.]">[यहाँ अपनी बायोग्राफी लिखें — आप कौन हैं, आपने वीडियो एडिटिंग क्यों चुनी, आपकी कहानी क्या है।]</p>
+            </article>
+
+            <article class="info-card">
+              <h3 data-hi="स्किल्स" data-en="Skills">स्किल्स</h3>
+              <ul class="skill-list">
+                <li class="placeholder-text" data-hi="[स्किल 1 — जैसे आपका एडिटिंग सॉफ़्टवेयर]" data-en="[Skill 1 — e.g. your editing software]">[स्किल 1 — जैसे आपका एडिटिंग सॉफ़्टवेयर]</li>
+                <li class="placeholder-text" data-hi="[स्किल 2]" data-en="[Skill 2]">[स्किल 2]</li>
+                <li class="placeholder-text" data-hi="[स्किल 3]" data-en="[Skill 3]">[स्किल 3]</li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <h3 data-hi="अनुभव" data-en="Experience">अनुभव</h3>
+              <p class="placeholder-text"
+                 data-hi="[यहाँ अपना असली अनुभव लिखें — सालों का अनुभव, काम के प्रकार आदि।]"
+                 data-en="[Write your real experience here — years of experience, types of work, etc.]">[यहाँ अपना असली अनुभव लिखें — सालों का अनुभव, काम के प्रकार आदि।]</p>
+            </article>
+
+            <article class="info-card">
+              <h3 data-hi="मेरा क्रिएटिव अप्रोच" data-en="My Creative Approach">मेरा क्रिएटिव अप्रोच</h3>
+              <p class="placeholder-text"
+                 data-hi="[यहाँ बताएँ कि आप किसी प्रोजेक्ट पर कैसे काम करते हैं और आपकी एडिटिंग की सोच क्या है।]"
+                 data-en="[Describe how you approach a project and your philosophy of editing.]">[यहाँ बताएँ कि आप किसी प्रोजेक्ट पर कैसे काम करते हैं और आपकी एडिटिंग की सोच क्या है।]</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. SERVICES ===================== -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-hi="सेवाएँ" data-en="Services">सेवाएँ</p>
+          <h2 id="services-title" class="section-title"
+              data-hi="मुख्य सेवा" data-en="Main Service">मुख्य सेवा</h2>
+        </header>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M2 9h20M7 4l-3 5M12 4l-3 5M17 4l-3 5"/>
+              <path d="M10 13l5 3-5 3z"/>
+            </svg>
+          </div>
+
+          <div class="service-body">
+            <h3 data-hi="प्रोफेशनल वीडियो एडिटिंग" data-en="Professional Video Editing">प्रोफेशनल वीडियो एडिटिंग</h3>
+
+            <!-- EDIT: Change this description to match exactly what you offer. -->
+            <p data-hi="आपकी रॉ फ़ुटेज को एक साफ़, प्रभावशाली और कहानी कहने वाले वीडियो में बदलना।"
+               data-en="Turning your raw footage into a clean, engaging video that tells a story.">आपकी रॉ फ़ुटेज को एक साफ़, प्रभावशाली और कहानी कहने वाले वीडियो में बदलना।</p>
+
+            <!-- EDIT: Replace these placeholders with your real service details. -->
+            <ul class="service-points">
+              <li class="placeholder-text" data-hi="[सेवा बिंदु 1 — यहाँ संपादित करें]" data-en="[Service point 1 — edit here]">[सेवा बिंदु 1 — यहाँ संपादित करें]</li>
+              <li class="placeholder-text" data-hi="[सेवा बिंदु 2 — यहाँ संपादित करें]" data-en="[Service point 2 — edit here]">[सेवा बिंदु 2 — यहाँ संपादित करें]</li>
+              <li class="placeholder-text" data-hi="[सेवा बिंदु 3 — यहाँ संपादित करें]" data-en="[Service point 3 — edit here]">[सेवा बिंदु 3 — यहाँ संपादित करें]</li>
+            </ul>
+
+            <a href="#contact" class="btn btn-gold"
+               data-hi="पूछताछ करें" data-en="Enquire Now">पूछताछ करें</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== 5. PORTFOLIO ===================== -->
+    <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-hi="पोर्टफोलियो" data-en="Portfolio">पोर्टफोलियो</p>
+          <h2 id="portfolio-title" class="section-title"
+              data-hi="चुनिंदा प्रोजेक्ट्स" data-en="Selected Projects">चुनिंदा प्रोजेक्ट्स</h2>
+        </header>
+
+        <!--
+          HOW TO ADD A REAL PROJECT LATER:
+          1. Upload your thumbnail image into an "images" folder in your repository.
+          2. Copy the project card block below (the one inside the comment).
+          3. Paste it inside <div class="portfolio-grid" id="portfolioGrid"> ... </div>
+          4. Replace the title, description, image path and YouTube link.
+          5. Delete the empty-state block (<div class="empty-state" id="emptyState"> ... </div>)
+             or leave it - the page will hide it automatically when a project card exists.
+
+          ------------- PROJECT CARD TEMPLATE -------------
+          <article class="project-card">
+            <a class="project-thumb" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+               target="_blank" rel="noopener noreferrer" aria-label="Watch: Your Project Title">
+              <img src="images/project-1.jpg" alt="Thumbnail of Your Project Title" loading="lazy">
+              <span class="play-badge" aria-hidden="true">&#9654;</span>
+            </a>
+            <div class="project-info">
+              <h3>Your Project Title</h3>
+              <p>Short description of the project and what you did.</p>
+              <a class="project-link" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+                 target="_blank" rel="noopener noreferrer">Watch on YouTube &rarr;</a>
+            </div>
+          </article>
+          -------------------------------------------------
+        -->
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Add real project cards here -->
+        </div>
+
+        <div class="empty-state reveal" id="emptyState">
+          <div class="empty-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16v16H4z"/>
+              <path d="M4 8h16M4 16h16M8 4v4M16 4v4M8 16v4M16 16v4"/>
+              <path d="M10.5 10.5l3.5 1.5-3.5 1.5z"/>
+            </svg>
+          </div>
+          <p class="empty-title"
+             data-hi="मेरा काम जल्द यहाँ दिखाई देगा।"
+             data-en="My portfolio is coming soon.">मेरा काम जल्द यहाँ दिखाई देगा।</p>
+          <p class="empty-note"
+             data-hi="नए प्रोजेक्ट्स जोड़े जा रहे हैं। तब तक आप अपने प्रोजेक्ट के बारे में बात करने के लिए संपर्क कर सकते हैं।"
+             data-en="New projects are being prepared. In the meantime, feel free to get in touch to discuss your project.">नए प्रोजेक्ट्स जोड़े जा रहे हैं। तब तक आप अपने प्रोजेक्ट के बारे में बात करने के लिए संपर्क कर सकते हैं।</p>
+          <a href="#contact" class="btn btn-outline"
+             data-hi="संपर्क करें" data-en="Get in Touch">संपर्क करें</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. CONTACT ===================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal">
+          <p class="eyebrow" data-hi="संपर्क" data-en="Contact">संपर्क</p>
+          <h2 id="contact-title" class="section-title"
+              data-hi="आइए आपकी कहानी पर काम करें" data-en="Let's Work on Your Story">आइए आपकी कहानी पर काम करें</h2>
+          <p data-hi="अपने प्रोजेक्ट की जानकारी नीचे लिखें।"
+             data-en="Share a few details about your project below.">अपने प्रोजेक्ट की जानकारी नीचे लिखें।</p>
+
+          <!--
+            WHATSAPP BUTTON (hidden until configured):
+            Open this file and find the line: const WHATSAPP_NUMBER = "";
+            Put your number with country code, digits only. Example: "919XXXXXXXXX"
+          -->
+          <a href="#" class="btn btn-whatsapp" id="whatsappBtn" target="_blank" rel="noopener noreferrer" hidden
+             data-hi="WhatsApp पर बात करें" data-en="Chat on WhatsApp">WhatsApp पर बात करें</a>
+        </div>
+
+        <!--
+          NOTE: This form is NOT connected to any backend, so it does not send data anywhere.
+          To make it work later, you can connect a free form service (for example Formspree)
+          by adding its URL in the form's action attribute and removing the preventDefault
+          block in the script below.
+        -->
+        <form class="contact-form reveal" id="enquiryForm" novalidate>
+          <div class="field">
+            <label for="name" data-hi="आपका नाम" data-en="Your Name">आपका नाम</label>
+            <input type="text" id="name" name="name" autocomplete="name" required
+                   data-hi-placeholder="अपना नाम लिखें" data-en-placeholder="Enter your name" placeholder="अपना नाम लिखें">
+          </div>
+
+          <div class="field">
+            <label for="contactInfo" data-hi="ईमेल या फ़ोन" data-en="Email or Phone">ईमेल या फ़ोन</label>
+            <input type="text" id="contactInfo" name="contact" autocomplete="email" required
+                   data-hi-placeholder="ईमेल या फ़ोन नंबर" data-en-placeholder="Email address or phone number" placeholder="ईमेल या फ़ोन नंबर">
+          </div>
+
+          <div class="field">
+            <label for="details" data-hi="प्रोजेक्ट की जानकारी" data-en="Project Details">प्रोजेक्ट की जानकारी</label>
+            <textarea id="details" name="details" rows="5" required
+                      data-hi-placeholder="अपने प्रोजेक्ट के बारे में बताएँ" data-en-placeholder="Tell me about your project" placeholder="अपने प्रोजेक्ट के बारे में बताएँ"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold"
+                  data-hi="पूछताछ भेजें" data-en="Send Enquiry">पूछताछ भेजें</button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== 7. FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">KUMAWAT <span>STUDIO</span></a>
+        <p>Bhanu Kumawat</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home" data-hi="होम" data-en="Home">होम</a>
+        <a href="#about" data-hi="परिचय" data-en="About">परिचय</a>
+        <a href="#services" data-hi="सेवाएँ" data-en="Services">सेवाएँ</a>
+        <a href="#portfolio" data-hi="पोर्टफोलियो" data-en="Portfolio">पोर्टफोलियो</a>
+        <a href="#contact" data-hi="संपर्क" data-en="Contact">संपर्क</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> KUMAWAT STUDIO. <span data-hi="सर्वाधिकार सुरक्षित।" data-en="All rights reserved.">सर्वाधिकार सुरक्षित।</span></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---------- SETTINGS (edit here) ---------- */
+      // WhatsApp number with country code, digits only. Example: "919XXXXXXXXX"
+      // Leave empty ("") to keep the WhatsApp button hidden.
+      const WHATSAPP_NUMBER = "";
+      const WHATSAPP_MESSAGE = "Hello KUMAWAT STUDIO, I would like to discuss a video editing project.";
+
+      /* ---------- Helpers ---------- */
+      const root = document.documentElement;
+      root.classList.add('js');
+
+      /* ---------- Language switching ---------- */
+      const langButtons = document.querySelectorAll('.lang-btn');
+      const statusMessages = {
+        hi: {
+          empty: 'कृपया सभी फ़ील्ड भरें।',
+          notConnected: 'यह फ़ॉर्म अभी किसी सेवा से जुड़ा नहीं है, इसलिए आपकी जानकारी कहीं भेजी नहीं गई है।'
+        },
+        en: {
+          empty: 'Please fill in all fields.',
+          notConnected: 'This form is not connected to a service yet, so your details have not been sent anywhere.'
+        }
+      };
+      const menuLabels = {
+        hi: { open: 'मेन्यू खोलें', close: 'मेन्यू बंद करें' },
+        en: { open: 'Open menu', close: 'Close menu' }
+      };
+
+      function setLanguage(lang) {
+        if (lang !== 'hi' && lang !== 'en') lang = 'hi';
+        root.setAttribute('lang', lang);
+
+        document.querySelectorAll('[data-hi][data-en]').forEach(function (el) {
+          el.innerHTML = el.getAttribute('data-' + lang);
+        });
+
+        document.querySelectorAll('[data-hi-placeholder]').forEach(function (el) {
+          el.setAttribute('placeholder', el.getAttribute('data-' + lang + '-placeholder'));
+        });
+
+        langButtons.forEach(function (btn) {
+          btn.setAttribute('aria-pressed', btn.getAttribute('data-lang') === lang ? 'true' : 'false');
+        });
+
+        const toggle = document.getElementById('navToggle');
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-label', isOpen ? menuLabels[lang].close : menuLabels[lang].open);
+
+        const status = document.getElementById('formStatus');
+        status.textContent = '';
+        status.className = 'form-status';
+
+        try { localStorage.setItem('kumawat-lang', lang); } catch (e) { /* storage unavailable */ }
+      }
+
+      langButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setLanguage(btn.getAttribute('data-lang'));
+        });
+      });
+
+      let savedLang = 'hi';
+      try { savedLang = localStorage.getItem('kumawat-lang') || 'hi'; } catch (e) { /* ignore */ }
+      setLanguage(savedLang);
+
+      /* ---------- Mobile navigation ---------- */
+      const navToggle = document.getElementById('navToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      function setMenu(open) {
+        navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        navMenu.classList.toggle('open', open);
+        navToggle.classList.toggle('active', open);
+        document.body.classList.toggle('menu-open', open);
+        const lang = root.getAttribute('lang') || 'hi';
+        navToggle.setAttribute('aria-label', open ? menuLabels[lang].close : menuLabels[lang].open);
+      }
+
+      navToggle.addEventListener('click', function () {
+        setMenu(navToggle.getAttribute('aria-expanded') !== 'true');
+      });
+
+      navMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () { setMenu(false); });
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') setMenu(false);
+      });
+
+      /* ---------- Header style on scroll ---------- */
+      const header = document.querySelector('.site-header');
+      function onScroll() {
+        header.classList.toggle('scrolled', window.scrollY > 40);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      /* ---------- Reveal on scroll ---------- */
+      const revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealEls.forEach(function (el) { io.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add('visible'); });
+      }
+
+      /* ---------- Portfolio: hide empty state when projects exist ---------- */
+      const grid = document.getElementById('portfolioGrid');
+      const emptyState = document.getElementById('emptyState');
+      if (grid && emptyState && grid.querySelector('.project-card')) {
+        emptyState.hidden = true;
+      }
+
+      /* ---------- WhatsApp button (hidden until configured) ---------- */
+      const waBtn = document.getElementById('whatsappBtn');
+      const cleanNumber = String(WHATSAPP_NUMBER).replace(/\D/g, '');
+      if (waBtn && cleanNumber.length > 5) {
+        waBtn.href = 'https://wa.me/' + cleanNumber + '?text=' + encodeURIComponent(WHATSAPP_MESSAGE);
+        waBtn.hidden = false;
+      }
+
+      /* ---------- Enquiry form (no backend – honest message only) ---------- */
+      const form = document.getElementById('enquiryForm');
+      const formStatus = document.getElementById('formStatus');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const lang = root.getAttribute('lang') || 'hi';
+        const name = form.elements['name'].value.trim();
+        const contact = form.elements['contact'].value.trim();
+        const details = form.elements['details'].value.trim();
+
+        if (!name || !contact || !details) {
+          formStatus.textContent = statusMessages[lang].empty;
+          formStatus.className = 'form-status error';
+          return;
+        }
+
+        formStatus.textContent = statusMessages[lang].notConnected;
+        formStatus.className = 'form-status info';
+      });
+
+      /* ---------- Footer year ---------- */
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
